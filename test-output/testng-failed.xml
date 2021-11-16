@@ -5,11 +5,9 @@
     <classes>
       <class name="com.Educational.SkillRaryApp.Testscripts.UpdateProfile">
         <methods>
-          <include name="closeApp"/>
           <include name="configBS"/>
           <include name="configBM"/>
           <include name="tc3"/>
-          <include name="configAS"/>
         </methods>
       </class> <!-- com.Educational.SkillRaryApp.Testscripts.UpdateProfile -->
     </classes>

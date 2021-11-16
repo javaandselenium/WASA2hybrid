@@ -13,6 +13,6 @@ public interface AutoConstant {
 	String propertyFilePath="./src/test/resources/data.properties";
 	String mysqlUrl="jdbc:mysql://localhost:3306/skillrary";
 	
-	String fileupload="C:\\Users\\QSP\\Desktop\\Autoit\\photo.exe";
+	String fileupload="‪C:\\Users\\QSP\\Desktop\\Autoit\\srupload1.exe";
 
 }

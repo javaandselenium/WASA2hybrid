@@ -30,20 +30,20 @@ public class Profilepage {
 	@FindBy(xpath="//button[text()='Update']")
 	private WebElement updatebtn;
 	
-	@FindBy(id="photo")
+	@FindBy(xpath="//input[@type='file']")
 	private WebElement photo;
 	
 	public Profilepage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void updateDetails() {
-		firstName.sendKeys("qwerty");
-		lastName.sendKeys("uyutyuteyt");
-		emailtb.sendKeys("test@gmail.com");
-		password.sendKeys("86r567q565456");
-		contactinfo.sendKeys("9098765678");
-		addresstb.sendKeys("# 123 qspider");
+	public void updateDetails(String fn,String ln,String email,String pwd,String contact,String add) {
+		firstName.sendKeys(fn);
+		lastName.sendKeys(ln);
+		emailtb.sendKeys(email);
+		password.sendKeys(pwd);
+		contactinfo.sendKeys(contact);
+		addresstb.sendKeys(add);
 		
 	}
 

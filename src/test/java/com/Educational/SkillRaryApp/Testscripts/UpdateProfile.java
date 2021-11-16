@@ -10,11 +10,14 @@ import com.Educational.SkillRaryApp.genericLib.BaseClass;
 
 public class UpdateProfile extends BaseClass{
 	@Test
-	public void tc3() throws IOException  {
+	public void tc3() throws IOException, InterruptedException  {
 	Profilepage p=new Profilepage(driver);
-	p.updateDetails();
+	//p.updateDetails();
+	Thread.sleep(5000);
 	p.getPhoto().click();
-	driverUtilies.uploadFile(AutoConstant.fileupload);
+	Thread.sleep(5000);
+	driverUtilies.uploadFile("‪C:\\Users\\QSP\\Desktop\\Autoit\\srupload1.exe");
+	
 	p.getPasswordtb().sendKeys("5645645");
 	p.getUpdatebtn().click();
 	}

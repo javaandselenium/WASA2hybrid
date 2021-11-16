@@ -57,30 +57,30 @@ public class BaseClass {
 	
 	}
 	
-	@AfterMethod
-	public void closeApp(ITestResult res) {
-		int status = res.getStatus();
-		if(status==ITestResult.FAILURE) {
-			test.log(Status.FAIL,res.getName()+"Test case failed");
-			test.log(Status.FAIL,res.getThrowable()+"Test case failed eception");
-		}
-		else if(status==ITestResult.SUCCESS) {
-			test.log(Status.PASS,res.getName()+"Test case passed");
-			
-		}
-		else if(status==ITestResult.SKIP) {
-			test.log(Status.SKIP,res.getName()+"Test case skipped");
-		}
-		
-	}
-	
-	
-	@AfterSuite
-	public void configAS() throws SQLException {
-		htmlreport.flush();
-		reports.flush();
-		fileUtilies.closeDb();
-	}
+//	@AfterMethod
+//	public void closeApp(ITestResult res) {
+//		int status = res.getStatus();
+//		if(status==ITestResult.FAILURE) {
+//			test.log(Status.FAIL,res.getName()+"Test case failed");
+//			test.log(Status.FAIL,res.getThrowable()+"Test case failed eception");
+//		}
+//		else if(status==ITestResult.SUCCESS) {
+//			test.log(Status.PASS,res.getName()+"Test case passed");
+//			
+//		}
+//		else if(status==ITestResult.SKIP) {
+//			test.log(Status.SKIP,res.getName()+"Test case skipped");
+//		}
+//		
+//	}
+//	
+//	
+//	@AfterSuite
+//	public void configAS() throws SQLException {
+//		htmlreport.flush();
+//		reports.flush();
+//		fileUtilies.closeDb();
+//	}
 	
 	
 	
